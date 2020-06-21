@@ -60,6 +60,7 @@ console.log('Last name is: ',lastName);
  * Basic operators
  */
 
+/*
 var curYear, ageJohn, ageMark, yearJohn, yearMark;
 curYear = 2020;
 ageJohn = 28;
@@ -83,6 +84,46 @@ console.log(typeof johnOlder); // expect boolean
 
 var x;
 console.log(typeof x); // expect undefined
+*/
+
+/*****************************
+ * Operator precedence
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+ */
+
+var now = 2020;
+var yearJohn = 1989;
+var fullAge = 18;
+
+// Multiple operators: both math and logical operator
+var isFullAge = now - yearJohn >= fullAge; // true
+console.log(isFullAge);
+
+// Grouping
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var avg = (ageJohn + ageMark) / 2;
+console.log(avg);
+
+// Multiple assignments
+var x, y;
+x = y =  (3 + 5) * 4 - 6; // 26
+console.log(x, y);
+
+// More operators
+x *= 2; // x = x * 2;
+console.log(x);
+
+x += 10;
+console.log(x);
+
+x++; // increment (add 1 to the original value, different from ++x in loop)
+console.log(x);
+
+
+
+
+
 
 
 
