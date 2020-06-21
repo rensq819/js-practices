@@ -56,4 +56,36 @@ var lastName = prompt('What is his last name?');
 console.log('Last name is: ',lastName);
 */
 
+/*****************************
+ * Basic operators
+ */
+
+var curYear, ageJohn, ageMark, yearJohn, yearMark;
+curYear = 2020;
+ageJohn = 28;
+ageMark = 33;
+
+// Math operators
+yearJohn = curYear - ageJohn;
+yearMark = curYear - ageMark;
+
+console.log(yearJohn, yearMark);
+
+console.log(curYear + 2);
+
+// Logical operators
+var johnOlder = ageJohn > ageMark;
+console.log('is John older than Mark? ' + johnOlder);
+
+// typeof operator
+console.log(typeof curYear); // expect number
+console.log(typeof johnOlder); // expect boolean
+
+var x;
+console.log(typeof x); // expect undefined
+
+
+
+
+
 
