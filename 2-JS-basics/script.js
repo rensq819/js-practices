@@ -56,6 +56,7 @@ var lastName = prompt('What is his last name?');
 console.log('Last name is: ',lastName);
 */
 
+
 /*****************************
  * Basic operators
  */
@@ -85,6 +86,7 @@ console.log(typeof johnOlder); // expect boolean
 var x;
 console.log(typeof x); // expect undefined
 */
+
 
 /*****************************
  * Operator precedence
@@ -138,6 +140,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 GOOD LUCK 😀
 */
 
+/*
 // BMI = mass / height^2 = mass / (height * height)
 var weightMark, weightJohn, heightMark, heightJohn;
 weightMark = 78;
@@ -153,6 +156,44 @@ console.log(`Mark's BMI: ${bmiMark}     John's BMI: ${bmiJohn}`);
 var markHigher = bmiMark > bmiJohn;
 
 console.log(`Is Mark's BMI higher than John's? ${markHigher}`);
+*/
+
+
+/*****************************
+* If else statments
+* edit: using if/else shorthand instead
+*/
+
+/*
+var firstName = 'John';
+var civilStatus = 'Single'; // 'Married'
+
+console.log(`John is ${civilStatus === 'Married' ? '': 'not '}married.`)
+*/
+
+
+/*****************************
+* Boolean logic
+* edit: using switch instead of if/else
+*/
+
+var firstName = 'John';
+var age = 22;
+
+switch (true) { // use logical operator with switch, NOT THE BEST PRACTISE, suggest sticking with if/else
+    case (age < 13):
+        console.log(firstName + 'is a boy');
+        break;
+    case (age >= 13 && age < 20):
+        console.log(firstName + 'is a teen');
+        break;
+    case (age >= 20):
+        console.log(firstName + 'is an adult');
+        break;
+}
+
+
+
 
 
 
