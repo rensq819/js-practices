@@ -177,6 +177,7 @@ console.log(`John is ${civilStatus === 'Married' ? '': 'not '}married.`)
 * edit: using switch instead of if/else
 */
 
+/*
 var firstName = 'John';
 var age = 22;
 
@@ -191,6 +192,22 @@ switch (true) { // use logical operator with switch, NOT THE BEST PRACTISE, sugg
         console.log(firstName + 'is an adult');
         break;
 }
+*/
+
+
+/*****************************
+* The tenary operator and switch statements
+*/
+
+var firstName = 'John';
+var age = 16;
+
+// Tenary operator: {condition ? if : else}
+age >= 18 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks juice');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+
+ 
 
 
 
