@@ -207,7 +207,21 @@ age >= 18 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' 
 
 var drink = age >= 18 ? 'beer' : 'juice';
 
- 
+
+// Switch Statement
+var job = 'cop';
+switch (job) {
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drivers an uber in Lisbon.');
+        break;
+    default:
+        console.log(firstName + ' does something else.')
+}
+
+
 
 
 
