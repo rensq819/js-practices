@@ -199,28 +199,49 @@ switch (true) { // use logical operator with switch, NOT THE BEST PRACTISE, sugg
 * The tenary operator and switch statements
 */
 
-var firstName = 'John';
-var age = 16;
+// var firstName = 'John';
+// var age = 16;
 
-// Tenary operator: {condition ? if : else}
-age >= 18 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks juice');
+// // Tenary operator: {condition ? if : else}
+// age >= 18 ? console.log(firstName + ' drinks beer') : console.log(firstName + ' drinks juice');
 
-var drink = age >= 18 ? 'beer' : 'juice';
+// var drink = age >= 18 ? 'beer' : 'juice';
 
 
-// Switch Statement
-var job = 'cop';
-switch (job) {
-    case 'teacher':
-        console.log(firstName + ' teaches kids how to code.');
-        break;
-    case 'driver':
-        console.log(firstName + ' drivers an uber in Lisbon.');
-        break;
-    default:
-        console.log(firstName + ' does something else.')
+// // Switch Statement
+// var job = 'cop';
+// switch (job) {
+//     case 'teacher':
+//         console.log(firstName + ' teaches kids how to code.');
+//         break;
+//     case 'driver':
+//         console.log(firstName + ' drivers an uber in Lisbon.');
+//         break;
+//     default:
+//         console.log(firstName + ' does something else.')
+// }
+
+
+/*****************************
+* Truthy and Falsy values and equality operators
+*/
+
+var height;
+
+height = 23; // 0 is false in if
+
+if (height || height === 0) {
+    console.log('Variable is defined')
+} else {
+    console.log('Variable is undefined')
 }
 
+// Equality operators
+if (height == '23') { // js will convert '23' to number 23
+    console.log('The == operator does type coercion')
+} else if(height === '23'){
+    console.log('The === operator doesnt do type coercion')
+}
 
 
 
